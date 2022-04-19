@@ -1,0 +1,86 @@
+@import url(https://unpkg.com/bootstrap@4.6.1/dist/css/bootstrap.min.css);
+
+.app__navbar-smallscreen{
+    display: none;
+}
+.navbar-nav-main{
+    margin-top: 10px;
+    display: flex;
+}
+.navbar-nav-main li Link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+.app__navbar-smallscreen_overlay .overlay__close{
+    font-size:27px;
+    color:white;
+    position: absolute;
+    top:20px;
+    cursor: pointer;
+    right:20px;
+}
+.overlay__close > .app__navbar-menu{
+    display: none;
+}
+
+.app__navbar-menu{
+    cursor: pointer;
+}
+.navbar-brand{
+    font-size: 27px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar-brand:hover{
+    color: white;
+    cursor: pointer;
+}
+.logout{
+    margin-top:-7px;
+    font-weight: bold;
+
+}
+
+.nav-link{
+    font-size: 18.5px;
+    font-weight: 300;
+    color: #fff;    
+}
+.nav-link:hover{
+    color: #fff;
+}
+.flex__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.app__navbar-smallscreen_links{
+    list-style: none;
+    color:white;
+    text-decoration: none;
+}
+
+.app__navbar-smallscreen_links li Link{
+    margin: 5px;
+    cursor:pointer;
+    color: white;
+    text-align: center;
+    font-size:27px;
+}
+@media screen and (max-width:1150px) {
+
+    .navbar-nav-main{
+        display: none;
+    }
+    .app__navbar-smallscreen{
+        display: inline-block;
+    }
+    
+}
