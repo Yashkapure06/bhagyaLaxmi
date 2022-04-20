@@ -1,5 +1,7 @@
 @import url(https://unpkg.com/bootstrap@4.6.1/dist/css/bootstrap.min.css);
 
+
+
 .app__navbar-smallscreen{
     display: none;
 }
@@ -20,7 +22,7 @@
     font-size:27px;
     color:white;
     position: absolute;
-    top:20px;
+    top:55px;
     cursor: pointer;
     right:20px;
 }
@@ -65,6 +67,7 @@
     list-style: none;
     color:white;
     text-decoration: none;
+    text-align: justify;
 }
 
 .app__navbar-smallscreen_links li Link{

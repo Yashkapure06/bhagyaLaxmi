@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import Button from '@material-ui/core/Button';
 import AuthenticationService from "./AuthenticationService";
-import { WithContext as ReactTags } from 'react-tag-input';
+// import { WithContext as ReactTags } from 'react-tag-input';
 import {includeNumbers, onlyRetailerId} from './Constant'
+import { TextField } from "@mui/material";
 
 const KeyCodes = {
     comma: 188,
@@ -92,19 +93,36 @@ class ManagePoints extends Component {
         return (
             <>
                 <div>
-                <ReactTags tags={tags}
+                <TextField
+                    required
+                    id="outlined-name"
+                    label="Add Tag"
+                    name="username"
+                    tags={tags}
                     suggestions={suggestions}
                     inputFieldPosition="bottom"
                     handleDelete={this.handleDelete}
                     handleAddition={this.handleAddition}
                     handleDrag={this.handleDrag}
-                    delimiters={delimiters} />
+                    delimiters={delimiters} 
+                    style={{ margin: 8 }}
+                />
+                {/* <ReactTags 
+                    tags={tags}
+                    suggestions={suggestions}
+                    inputFieldPosition="bottom"
+                    handleDelete={this.handleDelete}
+                    handleAddition={this.handleAddition}
+                    handleDrag={this.handleDrag}
+                    delimiters={delimiters} 
+                    style={{padding:18}}
+                    /> */}
                 </div>
                 <div>
-                    <Button type="submit" variant="contained" color="primary" onClick={this.handleSubmit}>
+                    <Button type="submit" variant="contained" color="primary" onClick={this.handleSubmit} style={{margin:8}}>
                         Include Number
                     </Button>
-                    <Button variant="contained" onClick={this.handleReset}>
+                    <Button variant="contained" onClick={this.handleReset} style={{margin:8}}>
                         Reset
                     </Button>
 

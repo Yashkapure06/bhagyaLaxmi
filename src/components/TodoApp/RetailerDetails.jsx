@@ -90,7 +90,7 @@ class RetailerDetails extends React.Component {
                     </LocalizationProvider>
                 </div>
                 <div className="col-sm-10">
-                <button onClick={this.submitData} className='btn btn-success'>Get Retailer Tickets</button>
+                <button style={{margin:8}} onClick={this.submitData} className='btn btn-success'>Get Retailer Tickets</button>
                 </div>
                 <div style={{
                     height: 400,

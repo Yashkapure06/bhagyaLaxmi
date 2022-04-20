@@ -63,8 +63,12 @@ class ViewRetailers extends Component {
                       this.setRetailerStatus(thisRow);
                     //return alert(JSON.stringify(thisRow, null, 4));
                   };
-                  return <Button onClick={onClick}>Modify Status</Button>;
-                }, width: 300
+                  return <Button 
+                    variant="contained"
+                    onClick={onClick}
+                    style={{fontSize: '13px', padding: 5, margin: '0px'}}
+                  >Modify Status</Button>;
+                }, width: 250
               }
         ]
         return (

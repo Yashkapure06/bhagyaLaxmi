@@ -57,7 +57,7 @@ class DrawDetails extends React.Component {
                     </LocalizationProvider>
                 </div>
                 <div className="col-sm-10">
-                    <button onClick={this.submitData} className='btn btn-success'>Get Draw Details</button>
+                    <button style={{margin:8}} onClick={this.submitData} className='btn btn-success'>Get Draw Details</button>
                 </div>
                 <div style={{
                     height: 400,
@@ -65,6 +65,7 @@ class DrawDetails extends React.Component {
                     textAlign: "center"
                 }}>
                     <DataGrid
+                        style={{display:'flex'}}
                         rows={this.state.data}
                         columns={columns}
                         pageSize={100}

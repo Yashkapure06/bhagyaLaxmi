@@ -54,10 +54,10 @@ class AddRetailerBalance extends Component {
             <TextField id="outlined-basic" label="New Balance" variant="outlined" name="balance" required value={this.state.balance}
              onChange={this.setProperty} />
             <div>
-                <Button type="submit" variant="contained" color="primary" onClick={this.handleSubmit}>
+                <Button type="submit" variant="contained" color="primary" onClick={this.handleSubmit} style={{margin:8}}>
                     Add Balance
                 </Button>
-                <Button variant="contained" onClick={this.handleClose}>
+                <Button variant="contained" onClick={this.handleClose} style={{margin:8}}>
                     Reset
                 </Button>
 
