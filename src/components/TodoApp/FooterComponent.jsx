@@ -9,8 +9,8 @@ import LoginComponent from "./LoginComponent.jsx";
 class FooterComponent extends Component{
     render() {
         return (
-            <footer className="footer-responsive bg-primary">
-                    <span style={{fontWeight:'bold', color:'white', bottom:0, position: 'relative', height:10}}> All rights reserved 2022</span>
+            <footer className="footer-responsive bg-primary fixed-bottom">
+                    <span style={{fontWeight:'bold', color:'white',position:'relative', height:10}}> All rights reserved 2022</span>
             </footer>
         )
     }

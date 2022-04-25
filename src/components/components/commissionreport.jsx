@@ -142,6 +142,7 @@ const Commissionreport = () => {
             </tbody>
           </table>
         </center>
+        <Button variant="contained" style={{backgroundColor:"#c9b500", float:'right', right:'5%'}} onClick={()=>console.log("You have clicked me!")}> Print </Button>
       </center>
     </div>
   );
