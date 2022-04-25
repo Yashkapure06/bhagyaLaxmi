@@ -42,7 +42,7 @@ const Users = () => {
         <div style={{width: '50%', backgroundColor:'#e8e8e8', padding:20, fontSize:25, fontWeight: 'bold', marginTop:25}}> Users - View</div>
        <center><table style={{width:'75%',right:0, margin:25,}} className="table  table-hover ">
           <thead>
-            <tr>
+            <tr className="bg-primary">
               <th scope="col">Sr.</th>
               <th scope="col">Type</th>
               <th scope="col">Login ID</th>

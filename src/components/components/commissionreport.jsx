@@ -113,7 +113,7 @@ const Commissionreport = () => {
             className="table  table-hover "
           >
             <thead>
-              <tr>
+              <tr  className="bg-primary">
                 <th scope="col">Sr.</th>
                 <th scope="col">username</th>
                 <th scope="col">From</th>
@@ -142,7 +142,8 @@ const Commissionreport = () => {
             </tbody>
           </table>
         </center>
-        <Button variant="contained" style={{backgroundColor:"#c9b500", float:'right', right:'5%'}} onClick={()=>console.log("You have clicked me!")}> Print </Button>
+        <Divider style={{ marginTop: 10, width: "75%" }} />
+        <Button variant="contained" style={{backgroundColor:"#c9b500", float:'right', right:'5%',top:10,marginBottom:'50px'}} onClick={()=>console.log("You have clicked me!")}> Print </Button>
       </center>
     </div>
   );
