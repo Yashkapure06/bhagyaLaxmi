@@ -4,10 +4,9 @@ import AuthenticationService from "./AuthenticationService.js";
 import { GiHamburgerMenu, GiCrossMark } from 'react-icons/gi';
 import { Divider } from "@mui/material";
 import "../../bootstrap/bootstrap.css";
+import SideBar from './SideBar.jsx'
 
 const HeaderComponent = () => {
-
-    // const [showMenu, setShowMenu] = useState(false);
     
     const [toggleMenu, setToggleMenu] = React.useState(false);
 
@@ -28,10 +27,8 @@ const HeaderComponent = () => {
                         {isUserLoggedIn && <li className="nav-link"><Link className="nav-link" to="/drawDetails">Draw Details</Link></li>}
                         {isUserLoggedIn && <li className="nav-link"><Link className="nav-link" to="/retailerTickets">Retailer Tickets</Link></li>}
                     </ul>
-                    <ul  className="  navbar-nav justify-content-end">
-                        {!isUserLoggedIn && <li className="nav-link login"><Link className="nav-link" to="/login" style={{right:0}}>Login</Link></li>}
-                        {isUserLoggedIn && <li className="nav-link logout"><Link style={{fontWeight:"bold", padding:7,color:'black', borderRadius:5, backgroundColor:"red"}} className="nav-link" to="/logout" onClick={AuthenticationService.logout}>Logout</Link></li>}
-                        
+                    <ul  className="navbar-nav justify-content-end">
+                        {!isUserLoggedIn && <li className="nav-link login"><Link className="nav-link" to="/login" style={{right:0}}>Login</Link></li>}  
                     </ul>
 
                     <div className="app__navbar-smallscreen">
@@ -42,7 +39,7 @@ const HeaderComponent = () => {
                         <center>
                             <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
                                 <GiCrossMark fontSize={27} className="overlay__close" onClick={()=>setToggleMenu(false)}/>
-                                <ul style={{alignItems:'center',justifyContent: 'center'}} className="app__navbar-smallscreen_links">
+                                <ul style={{alignItems:'center', justifyContent: 'center'}} className="app__navbar-smallscreen_links">
                                     {isUserLoggedIn && <li className="nav-link"><Link className="nav-link" onClick={()=>setToggleMenu(false)} to="/welcome/test">Home</Link></li>}<Divider />
                                     {isUserLoggedIn && <li className="nav-link"><Link className="nav-link" onClick={()=>setToggleMenu(false)} to="/addRetailer">Add Retailer</Link></li>}<Divider />
                                     {isUserLoggedIn && <li className="nav-link"><Link className="nav-link" onClick={()=>setToggleMenu(false)} to="/viewRetailers">View Retailer</Link></li>}<Divider />
@@ -57,6 +54,8 @@ const HeaderComponent = () => {
                     )}
                     </div>
                 </nav>
+                
+                {isUserLoggedIn && <SideBar/>}
             </header>
             
         )

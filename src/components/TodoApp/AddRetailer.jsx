@@ -58,17 +58,18 @@ class AddRetailer extends Component {
             value={this.state.userName}
             onChange={this.setProperty}
             style={{ margin: 8}}
-            />
+          />
           <TextField
             id="outlined-basic"
             label="Password"
             variant="outlined"
+            type="password"
             name="password"
             required
             value={this.state.password}
             onChange={this.setProperty}
             style={{ margin: 8}}
-            />
+          />
           <TextField
             id="outlined-basic"
             label="Commission %"
@@ -78,7 +79,7 @@ class AddRetailer extends Component {
             value={this.state.profitPercentage}
             onChange={this.setProperty}
             style={{ margin: 8}}
-            />
+          />
           <div>
             <Button
               type="submit"

@@ -18,8 +18,8 @@ constructor(props){
     render() {
         return (
             <>
-            <h1>Welcome!</h1>
             <div className="container">
+            <h1>Welcome!</h1>
             Welcome {this.props.params.name} you can manage your points here
             </div>
             <div className="container">
