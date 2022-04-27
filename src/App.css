@@ -10,6 +10,43 @@ h1{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+body {
+  background: url("./assets/banner.svg");
+  background-size: cover;
+  background-position: center;
+  transform: rotateZ('180deg');
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.banner02 {
+  background: url("./assets/banner02.svg");
+  background-color: #0b65c6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 50px 20px 25px 20px;
+  width: 90%;
+}
+
+.banner03 {
+  background: url("./assets/banner03.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.banner04 {
+  background: url("./assets/banner04.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
 /* .footer {
   position: absolute;
   bottom: 0;

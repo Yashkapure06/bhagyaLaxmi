@@ -65,19 +65,31 @@ class LoginComponent extends Component {
 
   render() {
     return (
-      <div 
-        style={{
-            border: '0.5px solid black',
-            margin: "50px 20px 25px 20px", 
-            paddingLeft:50, 
-            paddingRight:50, 
-            borderRadius:7,
-        }}
-      >
-          <Typography fontWeight={600} fontFamily={'BlinkMacSystemFont'} variant="h2" component="div" gutterBottom align="center" style={{marginTop:10}}>
+      <div >
+        <center>
+        <div
+          style={{
+            border: "0.5px solid black",
+            margin: "50px 20px 25px 20px",
+            // width: "100%",
+            paddingLeft: 50,
+            paddingRight: 50,
+            borderRadius: 7,
+          }}
+        >
+          <Typography
+            fontWeight={600}
+            fontFamily={"BlinkMacSystemFont"}
+            variant="h2"
+            color="white"
+            component="div"
+            gutterBottom
+            align="center"
+            style={{ marginTop: 10 }}
+          >
             Login
           </Typography>
-            <Divider />
+          <Divider />
           <div
             style={{
               padding: "10px",
@@ -98,7 +110,7 @@ class LoginComponent extends Component {
               name="username"
               value={this.state.username}
               onChange={this.handleChange}
-              style={{ margin: 8 }}
+              style={{ margin: 8}}
             />
             <br />
             <TextField
@@ -119,11 +131,13 @@ class LoginComponent extends Component {
               variant="contained"
               color="success"
               onClick={this.loginClicked}
-              style={{ margin: 8, marginTop: 16, fontWeight:550 }}
+              style={{ margin: 8, marginTop: 16, fontWeight: 550 }}
             >
               Login
             </Button>
           </div>
+        </div>
+        </center>
       </div>
     );
   }

@@ -16,7 +16,7 @@ const HeaderComponent = () => {
 
         return (
             <header>
-                <nav className="navbar navbar-expand-md  bg-primary">
+                <nav className="navbar navbar-expand-md " style={{backgroundColor:'#002776'}}>
                     <div> <a className="navbar-brand">Grocerytest app</a></div>
                     <ul className="navbar-nav-main">
                         {isUserLoggedIn && <li className="nav-link"><Link className="nav-link" to="/welcome/test">Home</Link></li>}

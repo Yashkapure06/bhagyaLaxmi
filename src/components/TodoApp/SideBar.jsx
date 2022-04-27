@@ -90,14 +90,14 @@ const SideBar = () => {
           onClick={() => setToggleMenu(true)}
           style={{
             float: "left",
-            marginBottom: 10,
             cursor: "pointer",
-            border: "1px solid",
             fontSize: "2rem",
             color: "#fff",
-            borderRadius: "7px",
+            marginTop:15,
+            borderRadius: 8,
+            postion: "fixed",
+            backgroundColor:'#002776'
           }}
-          className="bg-primary"
         />
 
         {toggleMenu && (
