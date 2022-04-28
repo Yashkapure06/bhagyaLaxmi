@@ -1,6 +1,18 @@
 import React, {useState} from "react";
-import Button from "@mui/material/Button";
-import Divider from "@material-ui/core/Divider";
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  Radio,
+  Divider,
+  FormControlLabel,
+  Grid,
+  Typography,
+  TextField,
+} from "@mui/material";
+
 
 const Operator = () => {
     const [user, setUser] = useState('');
@@ -22,23 +34,30 @@ const Operator = () => {
   return (
     <div>
       <center>
-        <div
-          style={{
-            width: "50%",
-            backgroundColor: "#e8e8e8",
-            padding: 20,
-            fontSize: 25,
-            fontWeight: "bold",
-            marginTop: 25,
-            borderRadius: 7,
-          }}
+      <Card style={{width:'75%',marginTop:25}} >
+        <CardHeader
+          // subheader="Manage "
+          title="Operator Bonus"
+          />
+        <Divider />
+        <CardContent
+          className="table-responsive"
         >
-          Operator Bonus
-        </div>
-      </center>
+          <Grid container spacing={6} wrap="wrap">
+            <Grid
+              item
+              md={16}
+              sm={18}
+              // sx={{
+              //   display: "flex",
+              //   flexDirection: "column",
+              // }}
+              xs={20}
+            >
+    
       <center className="table-responsive">
           <table
-            style={{ width: "75%",alignItem:'center', right: 0, margin: 25 }}
+            style={{ width: "95%",alignItem:'center', right: 0, margin: 25 }}
             className="table  table-hover "
           >
             <thead>
@@ -68,6 +87,11 @@ const Operator = () => {
         <Button variant="contained" color="primary" style={{ float:'right', right:'5%',top:10,marginBottom:'50px'}} onClick={()=>console.log("You have clicked me!")}>Add New </Button>
       
         </center>
+        </Grid>
+      </Grid>
+        </CardContent>
+      </Card>
+      </center>
     </div>
   );
 };

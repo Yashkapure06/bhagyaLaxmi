@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import AuthenticationService from "./AuthenticationService.js";
-import Button from "@mui/material/Button";
-import { Divider, TextField } from "@mui/material";
 import Typography from "@mui/material/Typography";
-
+import {
+  Button,
+  Card,
+  CardContent,
+  Grid,
+  TextField,
+  Divider
+} from "@mui/material";
 class LoginComponent extends Component {
   constructor(props) {
     super(props);
@@ -65,31 +70,35 @@ class LoginComponent extends Component {
 
   render() {
     return (
-      <div >
+      <div>
         <center>
-        <div
-          style={{
-            border: "0.5px solid black",
-            margin: "50px 20px 25px 20px",
-            // width: "100%",
-            paddingLeft: 50,
-            paddingRight: 50,
-            borderRadius: 7,
-          }}
-        >
+        <Card style={{ width: "75%", marginTop: 25 ,marginBottom:35}}>
+          
+          <CardContent className="table-responsive">
+            <Grid container spacing={6} wrap="wrap">
+              <Grid
+                item
+                md={16}
+                sm={18}
+                // sx={{
+                //   display: "flex",
+                //   flexDirection: "column",
+                // }}
+                xs={20}
+              >
+        <center>
           <Typography
             fontWeight={600}
             fontFamily={"BlinkMacSystemFont"}
             variant="h2"
-            color="white"
+            color="black"
             component="div"
             gutterBottom
             align="center"
-            style={{ marginTop: 10 }}
           >
             Login
           </Typography>
-          <Divider />
+          <Divider/>
           <div
             style={{
               padding: "10px",
@@ -135,8 +144,12 @@ class LoginComponent extends Component {
             >
               Login
             </Button>
-          </div>
         </div>
+        </center>
+        </Grid>
+        </Grid>
+        </CardContent>
+        </Card>
         </center>
       </div>
     );

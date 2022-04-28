@@ -5,10 +5,18 @@ import AuthenticationService from "./AuthenticationService.js";
 import { DataGrid } from "@mui/x-data-grid";
 import { drawDetailsUrl } from "./Constant";
 import DesktopDatePicker from "@mui/lab/DesktopDatePicker";
-import TextField from "@mui/material/TextField";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import RetailerDropDown from "./RetailerDropDown.jsx";
+import {
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  Divider,
+  Grid,
+  TextField,
+} from "@mui/material";
 
 class DrawDetails extends React.Component {
   constructor(props) {
@@ -41,6 +49,25 @@ class DrawDetails extends React.Component {
     ];
     return (
       <div>
+        <center>
+        <Card style={{ width: "75%", marginTop: 25 }}>
+            <CardHeader
+              // subheader="Manage "
+              title="Draw Details"
+            />
+            <Divider />
+            <CardContent className="table-responsive">
+              <Grid container spacing={6} wrap="wrap">
+                <Grid
+                  item
+                  md={16}
+                  sm={18}
+                  // sx={{
+                  //   display: "flex",
+                  //   flexDirection: "column",
+                  // }}
+                  xs={20}
+                >
         <div className="col-sm-10">
           <RetailerDropDown parentCallback={this.handleCallback} />
         </div>
@@ -56,13 +83,14 @@ class DrawDetails extends React.Component {
           </LocalizationProvider>
         </div>
         <div className="col-sm-10">
-          <button
+          <Button
             style={{ margin: 8 }}
             onClick={this.submitData}
-            className="btn btn-success"
+            variant="contained"
+            color="success"
           >
             Get Draw Details
-          </button>
+          </Button>
         </div>
         <div
           style={{
@@ -78,6 +106,11 @@ class DrawDetails extends React.Component {
             pageSize={100}
           />
         </div>
+        </Grid>
+      </Grid>
+      </CardContent>
+      </Card>
+      </center>
       </div>
     );
   }

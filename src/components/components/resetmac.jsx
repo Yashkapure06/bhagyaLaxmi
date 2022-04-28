@@ -1,10 +1,19 @@
 import React, { useState } from "react";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
-import Button from "@mui/material/Button";
-import Divider from "@material-ui/core/Divider";
-import Box from "@mui/material/Box";
-
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  Radio,
+  Divider,
+  FormControlLabel,
+  Grid,
+  Typography,
+  TextField,
+} from "@mui/material";
 const Resetmac = () => {
   const [retailer, setRetailer] = useState("");
   const handleChange = (event) => {
@@ -14,19 +23,25 @@ const Resetmac = () => {
   return (
     <div>
       <center>
-        <div
-          style={{
-            width: "50%",
-            backgroundColor: "#e8e8e8",
-            padding: 20,
-            fontSize: 25,
-            fontWeight: "bold",
-            marginTop: 25,
-            borderRadius: 7,
-          }}
-        >
-          Reset MAC
-        </div>
+      <Card style={{ width: "75%", marginTop: 25,marginBottom: 35 }}>
+          <CardHeader
+            title="Reset MAC"
+          />
+          <Divider />
+          <CardContent>
+            <Grid container spacing={6} wrap="wrap">
+              <Grid
+                item
+                md={16}
+                sm={18}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+                xs={20}
+              >
+      <center>
+        
         <div
           style={{
             textAlign: "center",
@@ -59,7 +74,7 @@ const Resetmac = () => {
               style={{
                 float: "left",
                 left: "15%",
-                top: 30,
+                top: 40,
                 marginBottom: "50px",
               }}
               onClick={() => console.log("You have clicked me!")}
@@ -69,6 +84,11 @@ const Resetmac = () => {
             </Button>
           </div>
         </div>
+      </center>
+      </Grid>
+      </Grid>
+      </CardContent>
+      </Card>
       </center>
     </div>
   );
