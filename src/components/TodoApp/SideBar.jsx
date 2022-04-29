@@ -144,7 +144,7 @@ const SideBar = () => {
                   Logout
                 </Link>
               </li>
-            )}
+             )} 
             <Button style={{ marginTop: 10 }} variant="text">
               Manage Points
             </Button>
@@ -158,7 +158,7 @@ const SideBar = () => {
               </Button>
             </Link>
 
-            <Link className="nav-link" to="">
+            {/* <Link className="nav-link" to="">
               <Button
                 style={{ marginTop: 10, width: "100%" }}
                 onClick={() => setToggleMenu(false)}
@@ -167,7 +167,7 @@ const SideBar = () => {
                 <PhoneIphoneIcon />
                 Mobile Users
               </Button>
-            </Link>
+            </Link> */}
 
             {/* <Link className="nav-link" to="/reports"> */}
             <Button
@@ -231,7 +231,7 @@ const SideBar = () => {
               </Button>
             </Link>
 
-            <Link className="nav-link" to="">
+            {/* <Link className="nav-link" to="">
               <Button
                 style={{ marginTop: 10, width: "100%" }}
                 onClick={() => setToggleMenu(false)}
@@ -240,7 +240,7 @@ const SideBar = () => {
                 <SportsEsportsIcon />
                 Feature Settings
               </Button>
-            </Link>
+            </Link> */}
 
             <Link className="nav-link" to="/liveplayer">
               <Button
@@ -264,7 +264,7 @@ const SideBar = () => {
               </Button>
             </Link>
 
-            <Link className="nav-link" to="">
+            {/* <Link className="nav-link" to="">
               <Button
                 style={{ marginTop: 10, width: "100%" }}
                 onClick={() => setToggleMenu(false)}
@@ -273,9 +273,9 @@ const SideBar = () => {
                 <EmojiEventsIcon />
                 Lottery
               </Button>
-            </Link>
+            </Link> */}
 
-            <Link className="nav-link" to="">
+            {/* <Link className="nav-link" to="">
               <Button
                 style={{ marginTop: 10, width: "100%" }}
                 onClick={() => setToggleMenu(false)}
@@ -284,7 +284,7 @@ const SideBar = () => {
                 <RoomServiceIcon />
                 Manage Lottery
               </Button>
-            </Link>
+            </Link> */}
 
             <Link className="nav-link" to="/fairplaymanagement">
               <Button
@@ -319,7 +319,7 @@ const SideBar = () => {
               </Button>
             </Link>
 
-            <Link className="nav-link" to="">
+            {/* <Link className="nav-link" to="">
               <Button
                 style={{ marginTop: 10, width: "100%" }}
                 onClick={() => setToggleMenu(false)}
@@ -328,7 +328,7 @@ const SideBar = () => {
                 <EmailIcon />
                 Messages
               </Button>
-            </Link>
+            </Link> */}
 
             <Link className="nav-link" to="/resetmac">
               <Button
@@ -352,7 +352,7 @@ const SideBar = () => {
               </Button>
             </Link>
 
-            <Link className="nav-link" to="">
+            {/* <Link className="nav-link" to="">
               <Button
                 style={{ marginTop: 10, width: "100%" }}
                 onClick={() => setToggleMenu(false)}
@@ -361,9 +361,9 @@ const SideBar = () => {
                 <LoopIcon />
                 Recycle
               </Button>
-            </Link>
+            </Link> */}
           </div>
-        )}
+        )} 
       </div>
     </>
   );

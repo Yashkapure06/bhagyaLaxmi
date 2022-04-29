@@ -74,7 +74,7 @@ class LoginComponent extends Component {
         <center>
         <Card style={{ width: "75%", marginTop: 25 ,marginBottom:35}}>
           
-          <CardContent className="table-responsive">
+          <CardContent className="table-responsive banner04">
             <Grid container spacing={6} wrap="wrap">
               <Grid
                 item
@@ -119,7 +119,7 @@ class LoginComponent extends Component {
               name="username"
               value={this.state.username}
               onChange={this.handleChange}
-              style={{ margin: 8}}
+              style={{ margin: 8, backgroundColor: "white" }}
             />
             <br />
             <TextField
@@ -130,7 +130,7 @@ class LoginComponent extends Component {
               type="password"
               value={this.state.password}
               onChange={this.handleChange}
-              style={{ margin: 8 }}
+              style={{ margin: 8, backgroundColor: "white" }}
             />
             <br />
             {/* User Name: <input type="text" name = "username" value={this.state.username} onChange = {this.handleChange}/> */}

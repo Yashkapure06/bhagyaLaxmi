@@ -8,7 +8,7 @@ class AuthenticatedRoute extends Component{
             return {...this.props.children}
         }
         else{
-            return <Navigate className="banner01" to="/login"></Navigate>
+            return <Navigate to="/login"></Navigate>
         }
     }
 }

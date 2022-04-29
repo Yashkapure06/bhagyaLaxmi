@@ -71,6 +71,7 @@ const Commissionreport = () => {
                     <Box sx={{ minWidth: 120 }}>
                       User:
                       <Select
+                        id='user'
                         style={{ width: "35%", height: "100%" }}
                         value={user}
                         label="User"

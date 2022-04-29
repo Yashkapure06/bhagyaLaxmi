@@ -22,13 +22,12 @@ h1{
 
 .banner02 {
   background: url("./assets/banner02.svg");
-  background-color: #0b65c6;
+  background-color: #002776;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
-  margin: 50px 20px 25px 20px;
-  width: 90%;
+  width: 100%;
 }
 
 .banner03 {
